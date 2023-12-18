@@ -1,21 +1,22 @@
 #include "main.h"
+
 /**
- * main - print _putchar
- * is written by mbah
- * Return: 0
- */
+ * main - entry point
+ *
+ * Description: prints _putchar
+ *
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
-return (0);
-}
+	char txt[] = "_putchar";
+	int x;
 
+	for (x = 0; x < 8; x++)
+	{
+		_putchar(txt[x]);
+	}
+	_putchar('\n');
+	return (0);
+}
